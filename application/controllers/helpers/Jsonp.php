@@ -1,6 +1,6 @@
 <?php
 
-class Person_Controller_Action_Helper_Jsonp extends Zend_Controller_Action_Helper_Abstract
+class Application_Controller_Action_Helper_Jsonp extends Zend_Controller_Action_Helper_Abstract
 {
 	
 	public function direct($response, $callback = "")
