@@ -14,7 +14,7 @@ class Application_Controller_Action_Helper_Jsonp extends Zend_Controller_Action_
             $viewRenderer = Zend_Controller_Action_HelperBroker::getExistingHelper('viewRenderer');
             $viewRenderer->setNoRender();
         }
-        
+        Zend_Json::$useBuiltinEncoderDecoder = true; 
         $json = Zend_Json::encode($response); 
 		if($callback !="")
 		{
